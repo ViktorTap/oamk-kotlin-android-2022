@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">BENCH PRESS 1RM CALCULATOR</string>
+    <string name="mainHeader">CALCULATE YOUR BENCH MAX</string>
+    <string name="btn1">1 rm</string>
+    <string name="tvLift">LIFT:</string>
+    <string name="tvReps">REPS:</string>
+    <string name="tvPer">%</string>
+    <string name="tvW">WEIGHT</string>
+    <string name="tvR">REPETITIONS</string>
+    <string name="tvInfo">be aware that those are approximate numbers</string>
+    <string name="btn_help">HELP BUTTON</string>
+    <string name="tvMade">MADE BY VIKTOR TAP WITH 🤓</string>
+
+
+    <!--RM -->
+
+    <string name="tv1">100 %</string>
+    <string name="tv2">95 %</string>
+    <string name="tv3">90 %</string>
+    <string name="tv4">85 %</string>
+    <string name="tv5">80 %</string>
+    <string name="tv6">75 %</string>
+    <string name="tv7">70 %</string>
+    <string name="tv8">65 %</string>
+    <string name="tv9">60 %</string>
+    <string name="tv10">55 %</string>
+
+    <!-- WEIGHT -->
+
+    <string name="tv1Weight"></string>
+    <string name="tv2Weight"></string>
+    <string name="tv3Weight"></string>
+    <string name="tv4Weight"></string>
+    <string name="tv5Weight"></string>
+    <string name="tv6Weight"></string>
+    <string name="tv7Weight"></string>
+    <string name="tv8Weight"></string>
+    <string name="tv9Weight"></string>
+    <string name="tv10Weight"></string>
+
+    <!-- REPETITIONS -->
+
+    <string name="tv1Reps">1</string>
+    <string name="tv2Reps">2 – 3</string>
+    <string name="tv3Reps">3 – 5</string>
+    <string name="tv4Reps">4 – 6</string>
+    <string name="tv5Reps">6 – 8</string>
+    <string name="tv6Reps">8 – 10</string>
+    <string name="tv7Reps">10 – 12</string>
+    <string name="tv8Reps">12 – 15</string>
+    <string name="tv9Reps">15 +</string>
+    <string name="tv10Reps">20 +</string>
+</resources>

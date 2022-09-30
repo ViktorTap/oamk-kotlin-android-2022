@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BBDEFB"
+    android:textAlignment="center"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/my_btn_01"
+        android:text="@string/btn1"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextNumber2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.819"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editTextNumber"
+        app:layout_constraintVertical_bias="0.575" />
+
+    <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_width="75dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:hint="1 - 10"
+
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/tvReps"
+        app:layout_constraintStart_toEndOf="@+id/tvReps"
+        app:layout_constraintTop_toTopOf="@+id/tvReps"
+        app:layout_constraintVertical_bias="0.517" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="75dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="19dp"
+        android:ems="10"
+        android:hint="in kilos"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/tvLift"
+        app:layout_constraintStart_toEndOf="@+id/tvLift"
+        app:layout_constraintTop_toTopOf="@+id/tvLift"
+        app:layout_constraintVertical_bias="0.379" />
+
+    <TextView
+        android:id="@+id/tvLift"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/chewy"
+        android:text="@string/tvLift"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvReps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/chewy"
+        android:text="@string/tvReps"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLift" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="283dp"
+        android:layout_height="330dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:stretchColumns="*"
+        android:textAlignment="center"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber2"
+        app:layout_constraintVertical_bias="0.122">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:minHeight="30dp"
+            android:textAlignment="center">
+
+            <TextView
+                android:id="@+id/tvP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/chewy"
+                android:gravity="center"
+                android:minHeight="30dp"
+                android:text="@string/tvPer"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvW"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/chewy"
+                android:gravity="center"
+                android:minHeight="30dp"
+                android:text="@string/tvW"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/chewy"
+                android:gravity="center"
+                android:minHeight="30dp"
+                android:text="@string/tvR"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:minHeight="30dp"
+            android:textAlignment="center">
+
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#42A5F5"
+                android:fontFamily="@font/chewy"
+                android:gravity="center"
+                android:minHeight="30dp"
+                android:text="@string/tv1"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv1Weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#42A5F5"
+                android:fontFamily="@font/chewy"
+                android:gravity="center"
+                android:minHeight="30dp"
+                android:text="@string/tv1Weight"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv1Reps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#42A5F5"
+                android:fontFamily="@font/chewy"
+                android:gravity="center"
+                android:minHeight="30dp"
+                android:text="@string/tv1Reps"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:minHeight="30dp"
+            android:textAlignment="center">
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/chewy"
+                android:gravity="center"
+                android:minHeight="30dp"
+                android:text="@string/tv2"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv2Weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/chewy"
+                android:gravity="center"
+                android:minHeight="30dp"
+                android:text="@string/tv2Weight"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv2Reps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/chewy"
+                android:gravity="center"
+                android:minHeight="30dp"
+                android:text="@string/tv2Reps"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:minHeight="30dp"
+            android:textAlignment="center">
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#90CAF9"
+                android:fontFamily="@font/chewy"
+                android:gravity="center"
+                android:minHeight="30dp"
+                android:text="@string/tv3"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv3Weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#90CAF9"
+                android:fontFamily="@font/chewy"
+                android:gravity="center"
+                android:minHeight="30dp"
+                android:text="@string/tv3Weight"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv3Reps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#90CAF9"
+                android:fontFamily="@font/chewy"
+                android:gravity="center"
+                android:minHeight="30dp"
+                android:text="@string/tv3Reps"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:minHeight="30dp"
+            android:textAlignment="center">
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/chewy"
+                android:gravity="center"
+                android:minHeight="30dp"
+                android:text="@string/tv4"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv4Weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/chewy"
+                android:gravity="center"
+                android:minHeight="30dp"
+                android:text="@string/tv4Weight"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv4Reps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/chewy"
+                android:gravity="center"
+                android:minHeight="30dp"
+                android:text="@string/tv4Reps"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:minHeight="30dp"
+            android:textAlignment="center">
+
+            <TextView
+                android:id="@+id/tv5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#90CAF9"
+                android:fontFamily="@font/chewy"
+                android:gravity="center"
+                android:minHeight="30dp"
+                android:text="@string/tv5"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv5Weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#90CAF9"
+                android:fontFamily="@font/chewy"
+                android:gravity="center"
+                android:minHeight="30dp"
+                android:text="@string/tv5Weight"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv5Reps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#90CAF9"
+                android:fontFamily="@font/chewy"
+                android:gravity="center"
+                android:minHeight="30dp"
+                android:text="@string/tv5Reps"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:minHeight="30dp"
+            android:textAlignment="center">
+
+            <TextView
+                android:id="@+id/tv6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/chewy"
+                android:gravity="center"
+                android:minHeight="30dp"
+                android:text="@string/tv6"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv6Weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/chewy"
+                android:gravity="center"
+                android:minHeight="30dp"
+                android:text="@string/tv6Weight"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv6Reps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/chewy"
+                android:gravity="center"
+                android:minHeight="30dp"
+                android:text="@string/tv6Reps"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:minHeight="30dp"
+            android:textAlignment="center">
+
+            <TextView
+                android:id="@+id/tv7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#90CAF9"
+                android:fontFamily="@font/chewy"
+                android:gravity="center"
+                android:minHeight="30dp"
+                android:text="@string/tv7"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv7Weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#90CAF9"
+                android:fontFamily="@font/chewy"
+                android:gravity="center"
+                android:minHeight="30dp"
+                android:text="@string/tv7Weight"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv7Reps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#90CAF9"
+                android:fontFamily="@font/chewy"
+                android:gravity="center"
+                android:minHeight="30dp"
+                android:text="@string/tv7Reps"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:minHeight="30dp"
+            android:textAlignment="center">
+
+            <TextView
+                android:id="@+id/tv8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/chewy"
+                android:gravity="center"
+                android:minHeight="30dp"
+                android:text="@string/tv8"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv8Weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/chewy"
+                android:gravity="center"
+                android:minHeight="30dp"
+                android:text="@string/tv8Weight"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv8Reps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/chewy"
+                android:gravity="center"
+                android:minHeight="30dp"
+                android:text="@string/tv8Reps"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:minHeight="30dp"
+            android:textAlignment="center">
+
+            <TextView
+                android:id="@+id/tv9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#90CAF9"
+                android:fontFamily="@font/chewy"
+                android:gravity="center"
+                android:minHeight="30dp"
+                android:text="@string/tv9"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv9Weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#90CAF9"
+                android:fontFamily="@font/chewy"
+                android:gravity="center"
+                android:minHeight="30dp"
+                android:text="@string/tv9Weight"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv9Reps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#90CAF9"
+                android:fontFamily="@font/chewy"
+                android:gravity="center"
+                android:minHeight="30dp"
+                android:text="@string/tv9Reps"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:minHeight="30dp"
+            android:textAlignment="center">
+
+            <TextView
+                android:id="@+id/tv10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/chewy"
+                android:gravity="center"
+                android:minHeight="30dp"
+                android:text="@string/tv10"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv10Weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/chewy"
+                android:gravity="center"
+                android:minHeight="30dp"
+                android:text="@string/tv10Weight"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv10Reps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/chewy"
+                android:gravity="center"
+                android:minHeight="30dp"
+                android:text="@string/tv10Reps"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btn_help"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/layer_list"
+        android:contentDescription="@string/btn_help"
+        app:layout_constraintBottom_toTopOf="@+id/tvMade"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+    <TextView
+        android:id="@+id/tvMade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/tvMade"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/chewy"
+        android:text="@string/mainHeader"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
